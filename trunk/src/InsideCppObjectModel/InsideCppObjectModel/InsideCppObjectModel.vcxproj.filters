@@ -42,9 +42,21 @@
     <ClCompile Include="Chapter03\VirtualInheritance.cpp">
       <Filter>Chapter03</Filter>
     </ClCompile>
+    <ClCompile Include="Chapter03\MultiInheritance.cpp">
+      <Filter>Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Vertex3d.cpp">
+      <Filter>Chapter03</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter03\VirtualInheritance.h">
+      <Filter>Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\MultiInheritance.h">
+      <Filter>Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Vertex3d.h">
       <Filter>Chapter03</Filter>
     </ClInclude>
   </ItemGroup>

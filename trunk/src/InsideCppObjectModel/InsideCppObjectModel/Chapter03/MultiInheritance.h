@@ -8,23 +8,22 @@ namespace Chapter03
 		~ios();
 	};
 
-	class istream : virtual public ios {
+	class istream : public ios {
 	public:
 		istream();
 		~istream();
 	};
 
-	class ostream : virtual public ios {
+	class ostream: public ios{
 	public:
 		ostream();
 		~ostream();
 	};
 
-	class iostream : virtual public istream, virtual public ostream {
+	class iostream : public istream, public ostream {
 	public:
 		iostream();
 		~iostream();
 	};
 
 }
-

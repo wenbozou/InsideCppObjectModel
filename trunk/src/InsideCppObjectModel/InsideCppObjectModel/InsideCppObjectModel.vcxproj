@@ -153,10 +153,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter03\VirtualInheritance.cpp" />
+    <ClCompile Include="Chapter03\MultiInheritance.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/d1 reportAllClassLayout %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Vertex3d.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/d1 reportAllClassLayout %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Chapter03\VirtualInheritance.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/d1 reportSingleClassLayoutiostream %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="InsideCppObjectModel.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Chapter03\MultiInheritance.h" />
+    <ClInclude Include="Chapter03\Vertex3d.h" />
     <ClInclude Include="Chapter03\VirtualInheritance.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

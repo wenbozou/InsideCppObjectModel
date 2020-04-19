@@ -1,5 +1,4 @@
-#include "VirtualInheritance.h"
-#include <iostream>
+#include "MultiInheritance.h"
 
 using namespace Chapter03;
 
